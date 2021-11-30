@@ -1,0 +1,12 @@
+{  
+    "manifest_version": 2,  
+    "name": "HelloContextMenuItem",  
+    "description": "Extension to demonstrate a Context-Menu-Item",  
+    "version": "2.0",  
+    "icons": { "16": "icon.png" },  
+    "background": {  
+        "scripts": ["bg/event.js"],    
+        "persistent": true  
+    },
+    "permissions": ["contextMenus","activeTab"]
+}
