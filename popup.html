@@ -12,16 +12,17 @@
   <body>
 
     <div id="app">
-      <div class="title">
-        <h1>h1. Bootstrap heading</h1>
-      </div>
-      
-      <div class="container">
-        <div class="form-floating mb-3 mt-2">
+      <div class="container mt-2">
+        <div class="title">
+          <p><img src="icon.png" alt="" srcset="" id="img">YouTube搜尋</p> 
+        </div>
+        <div class="form-floating mb-3">
           <input type="email" class="form-control" id="floatingInput" placeholder="搜尋內容" v-model="inputText" >
           <label for="floatingInput">搜尋內容</label>
         </div>
-        <button type="button" class="btn btn-success" id="getData" @click="SearchHandler">查詢</button>
+        <div class="col-lg-12 btn-line">
+          <button type="button" class="btn btn-success" id="getData" @click="SearchHandler">查詢</button>
+        </div>
       </div>
       
     </div>
