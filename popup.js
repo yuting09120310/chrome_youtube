@@ -1,7 +1,6 @@
-var getSelectedTab = (tab) => {
-  var tabId = tab.id;
-  var sendMessage = (messageObj) => chrome.tabs.sendMessage(tabId, messageObj);
-  document.getElementById('rotate').addEventListener('click', () => sendMessage({ action: 'ROTATE' }));
-  document.getElementById('reset').addEventListener('click', () => sendMessage({ action: 'RESET' }))
+window.onload = function(){
+  document.getElementById('getData').onclick = function(){
+    let search = document.getElementById('floatingInput').value;
+    chrome.tabs.create({url: 'https://www.youtube.com/results?search_query=' + encodeURI(search)});
+  }
 }
-chrome.tabs.getSelected(null, getSelectedTab);
