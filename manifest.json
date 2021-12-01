@@ -2,7 +2,7 @@
     "manifest_version": 2,  
     "name": "youtube搜尋器",  
     "description": "",  
-    "version": "0.1",  
+    "version": "0.2",  
     "icons": { 
         "16": "icon.png",
         "32": "icon.png",
