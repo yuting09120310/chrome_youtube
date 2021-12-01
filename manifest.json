@@ -3,7 +3,12 @@
     "name": "youtube搜尋器",  
     "description": "",  
     "version": "2.0",  
-    "icons": { "16": "icon.png" },  
+    "icons": { 
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
     "background": {  
         "scripts": ["bg/event.js"],    
         "persistent": true  
